@@ -1,0 +1,22 @@
+1.Given Fashion_Mnist dataset is first train with 50 epochs using simple autoencoder.
+2.Its architecture contain two linear layer with relu activation function.
+3.sigmoid activation function is use at last in decoder as input data is in range[0,1].
+4.After that same dataset is train with 50 epochs using variational autoencoder.
+5.Image reconstruction using autoencoder works well as compared to variational autoencoder for this network architecture.
+
+Result :
+
+Following output is provided in output folder :
+
+1.Autoencoder reconstruction images result for epoch : 1,13,26,50 
+  and corresponding MSE_loss for this epochs are 21.4344, 4.5376, 3.2576, 2.4810.
+2.Autoencoder loss curve : Plot of MSE_loss Vs Epochs.
+3.Variational Autoencoder reconstruction images result for epoch : 1,13,26,50 
+  and corresponding loss (MSE + KLD) for this epochs are 36.5665, 26.5147, 25.8542, 25.3647.
+4.Variational Autoencoder loss curve : Plot of loss (MSE + KLD) Vs Epochs.
+
+
+References :
+https://youtu.be/zp8clK9yCro
+https://youtu.be/VELQT1-hILo
+
